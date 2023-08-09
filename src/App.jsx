@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Homepage from './Pages/Homepage/Homepage';
 import Layout from './Layout/Layout';
+import Menu from './Pages/Menu/Menu';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -25,8 +26,8 @@ function App() {
           element: <Homepage></Homepage>
         },
         {
-          path:"/",
-          element: <Homepage></Homepage>
+          path:"/menu",
+          element: <Menu/>
         },
 
       ]
